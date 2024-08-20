@@ -1,0 +1,18 @@
+# Desconsiderar arquivos gerados
+node_modules/
+dist/
+build/
+
+# Desconsiderar arquivos de configuração locais
+*.env
+.vscode/
+
+# Desconsiderar arquivos de cache
+npm-cache/
+
+# Desconsiderar arquivos de teste
+tests/
+__tests__/
+
+# Desconsiderar arquivos de log
+*.log
