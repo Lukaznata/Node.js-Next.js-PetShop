@@ -16,3 +16,6 @@ __tests__/
 
 # Desconsiderar arquivos de log
 *.log
+
+# Desconsiderar arquivos de senhas
+generateHash.ts
