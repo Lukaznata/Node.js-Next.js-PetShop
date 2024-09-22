@@ -1,5 +1,7 @@
 # **DOCUMENTAÇÃO PROJETO PETSHOP**
 
+### EM DESENVOLVIMENTO...
+
 ## _SUMÁRIO DA DOCUMENTAÇÃO_
 
 [OBJETIVO DO PROJETO](#objetivo-do-projeto)
@@ -42,11 +44,11 @@ Permitir acesso a somente pessoas autenticadas;
 
 ### **_Página principal:_**
 
-agenda com os agendamentos de hoje.
+agenda com os agendamentos de hoje;
 
 ### **_Agenda:_**
 
-Filtros: hoje, semana, mês, dia especifico, por pendentes, por pagos, por cliente e por pet
+Filtros: hoje, semana, mês, dia especifico, por pendentes, por pagos, por cliente e por pet;
 
 ### **_*Detalhes do agendamento:*_**
 
@@ -54,7 +56,7 @@ Situação(pago ou pendente), nome e raça do pet, nome do cliente, serviços, v
 
 ### **_Edição de agendamentos:_**
 
-Permitir a edição e exclusão de agendamentos existentes.
+Permitir a edição e exclusão de agendamentos existentes;
 
 ### **_Cadastro de pets:_**
 
