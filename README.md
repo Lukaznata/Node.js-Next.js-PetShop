@@ -203,7 +203,7 @@ Em seguida, fiz o **DER** (Diagrama de Entidade e Relacionamento), que é mais d
 
 Criei também um modelo em excel para exemplificar como está o banco no DB.
 
-![Exemplo DB em Excel](./images/Excel_exemplo.png)
+![Exemplo DB em Excel](./images/excel.png)
 
 ## **_BACK-END_**
 
