@@ -1,6 +1,6 @@
 import { DataTypes } from "sequelize";
 
-import sequelize from "../db/conn";
+import sequelize from "../db/conn.js";
 
 const Pets = sequelize.define("pets", {
   nome_pet: {

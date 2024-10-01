@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
 import Joi from "joi";
 
-import Pets from "../models/Pets";
-import Clientes from "../models/Clientes";
+import Pets from "../models/Pets.js";
+import Clientes from "../models/Clientes.js";
 
 const petSchemaCreate = Joi.object({
   nome: Joi.string().min(3).max(100).required(),

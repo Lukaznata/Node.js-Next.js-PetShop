@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import Joi from "joi";
 import bcrypt from "bcrypt";
 
-import createUserToken from "../helpers/createToken";
+import createUserToken from "../helpers/createToken.js";
 
 const passwordSchemaCreate = Joi.object({
   senha: Joi.string().min(3).max(11).required(),

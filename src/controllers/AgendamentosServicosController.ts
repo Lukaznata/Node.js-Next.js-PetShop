@@ -2,9 +2,9 @@ import { Request, Response } from "express";
 
 import Joi from "joi";
 
-import Agendamentos from "../models/Agendamentos";
-import Servicos from "../models/Servicos";
-import AgendamentosServicos from "../models/AgendamentosServicos";
+import Agendamentos from "../models/Agendamentos.js";
+import Servicos from "../models/Servicos.js";
+import AgendamentosServicos from "../models/AgendamentosServicos.js";
 
 const agendamentoServicoSchemaCreate = Joi.object({
   id_agendamento: Joi.number().required(),

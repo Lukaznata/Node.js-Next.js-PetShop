@@ -2,9 +2,9 @@ import { Request, Response } from "express";
 import { Op } from "sequelize";
 import Joi from "joi";
 
-import Pets from "../models/Pets";
-import Clientes from "../models/Clientes";
-import EnderecosClientes from "../models/EnderecosClientes";
+import Pets from "../models/Pets.js";
+import Clientes from "../models/Clientes.js";
+import EnderecosClientes from "../models/EnderecosClientes.js";
 
 const enderecosClientesSchemaCreate = Joi.object({
   id_cliente: Joi.number().required(),

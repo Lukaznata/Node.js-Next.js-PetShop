@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { Op } from "sequelize";
 import Joi from "joi";
 
-import Servicos from "../models/Servicos";
+import Servicos from "../models/Servicos.js";
 
 const servicoSchemaCreate = Joi.object({
   nome: Joi.string().min(3).max(100).required(),

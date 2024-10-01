@@ -1,6 +1,6 @@
 import { DataTypes, Sequelize } from "sequelize";
 
-import sequelize from "../db/conn";
+import sequelize from "../db/conn.js";
 
 const Agendamentos = sequelize.define("agendamentos", {
   data_agendamento: {

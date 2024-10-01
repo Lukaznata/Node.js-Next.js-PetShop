@@ -1,8 +1,8 @@
 import express from "express";
 import { Request, Response } from "express";
-import VerifyToken from "../helpers/verifyToken";
+import VerifyToken from "../helpers/verifyToken.js";
 
-import PetsController from "../controllers/PetsController";
+import PetsController from "../controllers/PetsController.js";
 
 const router = express.Router();
 

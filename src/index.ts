@@ -1,26 +1,26 @@
 import express from "express";
 import cors from "cors";
 
-import sequelize from "./db/conn";
+import sequelize from "./db/conn.js";
 
 import { config } from "dotenv";
 
-import LoginRoutes from "./routes/LoginRoutes";
-import HomeRoutes from "./routes/HomeRoutes";
-import ClientesRoutes from "./routes/ClientesRoutes";
-import PetsRoutes from "./routes/PetsRoutes";
-import AgendamentosRoutes from "./routes/AgendamentosRoutes";
-import ServicosRoutes from "./routes/ServicosRoutes";
-import AgendamentosServicosRoutes from "./routes/AgendamentosServicosRoutes";
-import EnderecosClientesRoutes from "./routes/EnderecosClientesRoutes";
+import LoginRoutes from "./routes/LoginRoutes.js";
+import HomeRoutes from "./routes/HomeRoutes.js";
+import ClientesRoutes from "./routes/ClientesRoutes.js";
+import PetsRoutes from "./routes/PetsRoutes.js";
+import AgendamentosRoutes from "./routes/AgendamentosRoutes.js";
+import ServicosRoutes from "./routes/ServicosRoutes.js";
+import AgendamentosServicosRoutes from "./routes/AgendamentosServicosRoutes.js";
+import EnderecosClientesRoutes from "./routes/EnderecosClientesRoutes.js";
 
-import Clientes from "./models/Clientes";
-import Pets from "./models/Pets";
-import Agendamentos from "./models/Agendamentos";
-import Servicos from "./models/Servicos";
-import AgendamentosServicos from "./models/AgendamentosServicos";
-import EnderecosClientes from "./models/EnderecosClientes";
-import "./models/associations";
+import Clientes from "./models/Clientes.js";
+import Pets from "./models/Pets.js";
+import Agendamentos from "./models/Agendamentos.js";
+import Servicos from "./models/Servicos.js";
+import AgendamentosServicos from "./models/AgendamentosServicos.js";
+import EnderecosClientes from "./models/EnderecosClientes.js";
+import "./models/associations.js";
 
 Clientes;
 Pets;

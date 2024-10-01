@@ -1,8 +1,8 @@
 import express from "express";
 import { Request, Response } from "express";
-import VerifyToken from "../helpers/verifyToken";
+import VerifyToken from "../helpers/verifyToken.js";
 
-import AgendamentosController from "../controllers/AgendamentosController";
+import AgendamentosController from "../controllers/AgendamentosController.js";
 
 const router = express.Router();
 

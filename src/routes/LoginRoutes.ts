@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import express from "express";
 const router = express.Router();
 
-import LoginController from "../controllers/LoginController";
+import LoginController from "../controllers/LoginController.js";
 
 router.post("/", (req: Request, res: Response) => {
   LoginController.login(req, res);

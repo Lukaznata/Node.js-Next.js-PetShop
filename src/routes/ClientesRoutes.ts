@@ -1,10 +1,10 @@
-import { Request, Response } from "express";
 import express from "express";
-import VerifyToken from "../helpers/verifyToken";
+import { Request, Response } from "express";
+import VerifyToken from "../helpers/verifyToken.js";
+
+import ClientesController from "../controllers/ClientesController.js";
 
 const router = express.Router();
-
-import ClientesController from "../controllers/ClientesController";
 
 router.get("/", VerifyToken, (req: Request, res: Response) => {
   ClientesController.readAllClientes(req, res);

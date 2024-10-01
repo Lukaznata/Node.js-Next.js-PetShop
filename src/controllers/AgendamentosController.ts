@@ -2,14 +2,14 @@ import { Request, Response } from "express";
 import { Op } from "sequelize";
 import Joi from "joi";
 
-import Agendamentos from "../models/Agendamentos";
-import Pets from "../models/Pets";
-
 import { startOfWeek, endOfWeek } from "date-fns";
 import Sequelize from "sequelize";
-import Clientes from "../models/Clientes";
-import Servicos from "../models/Servicos";
-import AgendamentosServicos from "../models/AgendamentosServicos";
+
+import Agendamentos from "../models/Agendamentos.js";
+import Pets from "../models/Pets.js";
+import Clientes from "../models/Clientes.js";
+import Servicos from "../models/Servicos.js";
+import AgendamentosServicos from "../models/AgendamentosServicos.js";
 
 const agendamentoSchemaCreate = Joi.object({
   data_agendamento: Joi.string()

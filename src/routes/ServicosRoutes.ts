@@ -1,8 +1,8 @@
 import express from "express";
 import { Request, Response } from "express";
-import VerifyToken from "../helpers/verifyToken";
+import VerifyToken from "../helpers/verifyToken.js";
 
-import ServicosController from "../controllers/ServicosController";
+import ServicosController from "../controllers/ServicosController.js";
 
 const router = express.Router();
 
