@@ -16,28 +16,28 @@ import { Sequelize } from "sequelize";
 
 
 
-// const port = parseInt(process.env.MYSQLPORT, 10);
+const port = process.env.MYSQLPORT ? parseInt(process.env.MYSQLPORT, 10) : 3306;
 
-// const sequelize = new Sequelize(
-//   process.env.MYSQLDATABASE || 'petshop',
-//   process.env.MYSQLUSER || 'root',
-//   process.env.MYSQLPASSWORD,
-//   {
-//     dialect: "mysql",
-//     host: process.env.MYSQLHOST,
-//     port: port,
-//   }
-// );
+const sequelize = new Sequelize(
+  process.env.MYSQLDATABASE || 'teste2_petshop',
+  process.env.MYSQLUSER || 'root',
+  process.env.MYSQLPASSWORD || 'Lukaznata15@',
+  {
+    dialect: "mysql",
+    host: process.env.MYSQLHOST,
+    port: port,
+  }
+);
 
 
 
-if (!process.env.MYSQL_URL) {
-  throw new Error('MYSQL_URL is not defined in the environment variables');
-}
+// if (!process.env.MYSQL_URL) {
+//   throw new Error('MYSQL_URL is not defined in the environment variables');
+// }
 
-const sequelize = new Sequelize(process.env.MYSQL_URL, {
-  dialect: "mysql",
-});
+// const sequelize = new Sequelize(process.env.MYSQL_URL, {
+//   dialect: "mysql",
+// });
 
 
 export default sequelize;
