@@ -28,12 +28,6 @@ const clienteSchemaUpdate = Joi.object({
     }),
 });
 
-interface ClienteWithPets {
-  id: number;
-  nome_cliente: string;
-  telefone_cliente: number;
-  pets: (typeof Pets)[];
-}
 
 const capitalizeFirstLetter = (text: string) => {
   return text.charAt(0).toUpperCase() + text.slice(1).toLocaleLowerCase();

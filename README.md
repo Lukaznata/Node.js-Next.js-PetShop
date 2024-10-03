@@ -96,9 +96,9 @@ Relatórios de serviços realizados, valores pendentes e valores pagos em cada f
 
 - **_HOSPEDAGEM FRONT-END:_** Vercel;
 
-- **_HOSPEDAGEM BACK-END:_** Vercel;
+- **_HOSPEDAGEM BACK-END:_** Railway;
 
-- **_HOSPEDAGEM BANCO DE DADOS:_** verificando...;
+- **_HOSPEDAGEM BANCO DE DADOS:_** Railway;
 
 - **_TESTES AUTOMATIZADOS E DE INTEGRAÇÃO:_** Jest/Testing Library;
 
@@ -110,13 +110,13 @@ Relatórios de serviços realizados, valores pendentes e valores pagos em cada f
 
 ## _CONFIGURAÇÕES_
 
-_Neste projeto, comecei rodando o npm init para criar o arquivo **'PACKAGE.JSON'** e **'PACKAGE-LOCK.JSON'**. após fazer isso, eu instalei algumas **'DEPENDERIAS INICIAIS DO PROJETO.'** Até o momento elas são:_
+_Neste projeto, comecei rodando o npm init para criar o arquivo **'PACKAGE.JSON'** e **'PACKAGE-LOCK.JSON'**. após fazer isso, eu instalei algumas **'DEPENDERIAS DO PROJETO.'**:
 
 ### **_DEPENDÊNCIAS_**
 
 - **express:** Framework para criação de API;
 - **dotenv:** Uso de variáveis de ambiente;
-- **bcrypt:** criptografar/descriptografar senhas;
+- **bcrypt:** Criptografar/descriptografar senhas;
 - **cookie-parser:** Analisar cookies vindos por requisições;
 - **cors:** Usar frontend e backend na mesma maquina;
 - **date-fns:** Extrair datas complexas;
@@ -124,7 +124,7 @@ _Neste projeto, comecei rodando o npm init para criar o arquivo **'PACKAGE.JSON'
 - **jsonwebtoken:** Criar Token para uso de autenticação ;
 - **mysql:** Usar banco MySQL puro ;
 - **mysql2:** Usar banco MySQL através do Sequelize;
-- **sequelize:** Uso de queris SQL através de métodos simplificados;
+- **sequelize:** Uso de queries SQL através de métodos simplificados;
 
 ---
 
@@ -132,6 +132,7 @@ _Neste projeto, comecei rodando o npm init para criar o arquivo **'PACKAGE.JSON'
 
 ### **_DEPENDÊNCIAS DE DESENVOLVIMENTO_**
 
+- **_typescript:_** Para usar typescript;
 - **_@types/express:_** Para o TypeScript entender os tipos do express;
 - **_@types/node:_** Para o TypeScript entender os tipos do Node.js;
 - **_TSX:_** Para compilação automática do TypeScript ao salvar;
@@ -155,13 +156,15 @@ Criei um diretório chamado **_backend_** para armazenar toda a lógica do próp
 - **_package-lock.json:_** Armazenar todas as dependências e dependências das dependências;
 - **_package.json:_** Armazenar informações do projeto, dos módulos instalados e configurar scripts;
 - **_tsconfig.json:_** Configurações do TypeScript;
-- **_vercel.json:_** Arquivo para configurar o uso do backend com node.js na vercel.
+
 
 ### **_PACKAGE.JSON SCRIPTS_**
 
-Criei 1 script até o momento, que é:
+Criei 3 script até o momento, que são:
 
 - **_dev_**: "tsx watch src/index.ts": Usado em desenvolvimento para compilar e rodar o TypeScript automaticamente quando algum arquivo editado é salvo;
+- **_start_**: "node dist/index.js": Usado em produção para iniciar o backend;
+- **_build_**: "tsc": Usado para construir a versão JavaScript dentro do diretório dist antes de executar o start.
 
 ### **_TSCONFIG.JSON CONFIGURAÇÕES FEITAS_**
 
@@ -178,12 +181,12 @@ Fiz algumas configurações para o TypeScript entender o Node.js corretamente, s
 
   ***
 
-- **_"moduleResolution": "node10":_** Usado para ter compatibilidade com projetos Node.js mais antigos: Se você estiver trabalhando em um projeto que utiliza o Node.js versão 10 ou inferior, essa configuração garante que a resolução de módulos seja feita de forma consistente com o ambiente de execução.
+- **_"moduleResolution": "node":_** Usado para ter compatibilidade com projetos Node.js mais antigos: Se você estiver trabalhando em um projeto que utiliza o Node.js versão 10 ou inferior, essa configuração garante que a resolução de módulos seja feita de forma consistente com o ambiente de execução.
   Projetos que utilizam principalmente CommonJS;
 
 ---
 
-- **_"outDir": "./src/dist":_** Indica que todos os arquivos JavaScript gerados pela compilação do TypeScript serão colocados dentro de uma subpasta chamada dist dentro do diretório src;
+- **_"outDir": "./dist":_** Indica que todos os arquivos JavaScript gerados pela compilação do TypeScript serão colocados dentro de um diretório chamado dist;
 
 ## _ARQUITETURAS E DIAGRAMAS_
 
