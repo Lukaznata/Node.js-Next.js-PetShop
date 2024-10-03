@@ -14,16 +14,16 @@ import { Sequelize } from "sequelize";
 //   }
 // );
 
-const port = Number(process.env.MYSQL_PORT) || 3306;
+const port = Number(process.env.MYSQLPORT)
 
 const sequelize = new Sequelize(
-  "petshopDB",
-  "root",
+  process.env.MYSQLDATABASE || 'petshop',
+  process.env.MYSQLUSER || 'root',
   process.env.MYSQL_PASSWORD,
   {
-    host: process.env.HOST,
-    port,
     dialect: "mysql",
+    host: process.env.MYSQLHOST,
+    port: port,
   }
 );
 
