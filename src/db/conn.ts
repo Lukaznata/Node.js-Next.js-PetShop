@@ -19,7 +19,7 @@ const port = Number(process.env.MYSQLPORT)
 const sequelize = new Sequelize(
   process.env.MYSQLDATABASE || 'petshop',
   process.env.MYSQLUSER || 'root',
-  process.env.MYSQL_PASSWORD,
+  process.env.MYSQLPASSWORD,
   {
     dialect: "mysql",
     host: process.env.MYSQLHOST,
