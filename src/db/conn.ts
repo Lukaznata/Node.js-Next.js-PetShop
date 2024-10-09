@@ -14,8 +14,6 @@ import { Sequelize } from "sequelize";
 //   }
 // );
 
-
-
 const port = process.env.MYSQLPORT ? parseInt(process.env.MYSQLPORT, 10) : 3306;
 
 const sequelize = new Sequelize(

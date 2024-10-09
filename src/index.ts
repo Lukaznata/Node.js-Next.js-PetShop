@@ -57,3 +57,5 @@ sequelize
     });
   })
   .catch((err) => console.log("Erro ao criar tabela", err));
+
+  

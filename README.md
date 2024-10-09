@@ -16,19 +16,7 @@
 
 [ARQUITETURAS E DIAGRAMAS](#arquiteturas-e-diagramas)
 
-### **_Instalação e configuração:_** // em processo
 
-Passos para configurar o ambiente de desenvolvimento.
-
-### **_Usos:_** //em processo
-
-Como utilizar o software, exemplos de usos
-
-### **_Licenças:_** //em processo
-
-Informações sobre a licença do software.
-
----
 
 ## _OBJETIVO DO PROJETO:_
 
@@ -86,7 +74,7 @@ Relatórios de serviços realizados, valores pendentes e valores pagos em cada f
 
 - **_BANCO DE DADOS:_** MySQL;
 
-- **_ORM:_** sequelize;
+- **_ORM:_** Sequelize;
 
 - **_FRONTEND:_** React.js;
 
@@ -104,13 +92,13 @@ Relatórios de serviços realizados, valores pendentes e valores pagos em cada f
 
 - **_CRIAÇÃO DE DESIGN:_** Figma;
 
-- **_LINGUAGEM USADA:_** TypeScript;
+- **_LINGUAGEM UTILIZADA:_** TypeScript;
 
 ---
 
 ## _CONFIGURAÇÕES_
 
-_Neste projeto, comecei rodando o npm init para criar o arquivo **'PACKAGE.JSON'** e **'PACKAGE-LOCK.JSON'**. após fazer isso, eu instalei algumas **'DEPENDERIAS DO PROJETO.'**:
+Neste projeto, comecei rodando o npm init para criar o arquivo **'PACKAGE.JSON'** e **'PACKAGE-LOCK.JSON'**. após fazer isso, eu instalei algumas **'DEPENDÊNCIAS DO PROJETO'**.
 
 ### **_DEPENDÊNCIAS_**
 
@@ -128,7 +116,7 @@ _Neste projeto, comecei rodando o npm init para criar o arquivo **'PACKAGE.JSON'
 
 ---
 
-- Como este projeto será codificado em TypeScript, eu instalei algumas dependências especificas para seu uso.
+*Como este projeto será codificado em TypeScript, eu instalei algumas dependências especificas para seu uso.
 
 ### **_DEPENDÊNCIAS DE DESENVOLVIMENTO_**
 
@@ -155,6 +143,7 @@ Criei um diretório chamado **_backend_** para armazenar toda a lógica do próp
 - **_.gitignore:_** Para ignorar alguns arquivos que não serão versionados no git;
 - **_package-lock.json:_** Armazenar todas as dependências e dependências das dependências;
 - **_package.json:_** Armazenar informações do projeto, dos módulos instalados e configurar scripts;
+- **_README.md:_** Para documentação do projeto;
 - **_tsconfig.json:_** Configurações do TypeScript;
 
 
@@ -194,19 +183,19 @@ Fiz algumas configurações para o TypeScript entender o Node.js corretamente, s
 
 Antes de entrar na arquitetura do backend, criei a arquitetura do banco de dados.
 
-Eu comecei pelas entidades PET, CLIENTE, AGENDAMENTO, SERVICO, AGENDAMENTO_SERVICO;
+Eu comecei pelas entidades PET, CLIENTE, ENDEREÇOS, AGENDAMENTO, SERVICO, AGENDAMENTO_SERVICO;
 
 Fiz um **MER** (Modelo de Entidade e Relacionamento):
 
-![Modelo de Entidade e Relacionamento](./images/Modelo_Entidade_Relacionamento_FIGMA.png)
+![Modelo de Entidade e Relacionamento](../images/Modelo_Entidade_Relacionamento_FIGMA.png)
 
 Em seguida, fiz o **DER** (Diagrama de Entidade e Relacionamento), que é mais detalhado e mais próximo do resultado final do banco de dados.
 
-![Diagrama de Entidade e Relacionamento](./images/Digrama_Entidade_Relacionamento_FIGMA.png)
+![Diagrama de Entidade e Relacionamento](../images/Digrama_Entidade_Relacionamento_FIGMA.png)
 
 Criei também um modelo em excel para exemplificar como está o banco no DB.
 
-![Exemplo DB em Excel](./images/excel.png)
+![Exemplo DB em Excel](../images/excel.png)
 
 ## **_BACK-END_**
 
