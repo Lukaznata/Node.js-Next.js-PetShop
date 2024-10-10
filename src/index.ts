@@ -36,7 +36,9 @@ const port = process.env.BACKEND_PORT || 5000;
 
 app.use(express.json());
 
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(
+  cors({ credentials: true, origin: "https://petshop-hazel.vercel.app" })
+);
 
 app.use("/petshop/login", LoginRoutes);
 app.use("/petshop", HomeRoutes);
@@ -57,5 +59,3 @@ sequelize
     });
   })
   .catch((err) => console.log("Erro ao criar tabela", err));
-
-  
