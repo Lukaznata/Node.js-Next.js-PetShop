@@ -3,7 +3,7 @@ import VerifyToken from "../helpers/verifyToken.js";
 
 const router = express.Router();
 
-router.get("/auth/verify", VerifyToken, (req, res) => {
+router.get("/", VerifyToken, (req, res) => {
   return res.status(200).json({ message: "Token válido" });
 });
 
