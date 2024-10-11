@@ -37,8 +37,8 @@ const port = process.env.BACKEND_PORT || 5000;
 app.use(express.json());
 
 app.use(
-  // cors({ credentials: true, origin: "https://petshop-hazel.vercel.app" })
-  cors({ credentials: true, origin: "http://localhost:3000" })
+  cors({ credentials: true, origin: "https://petshop-hazel.vercel.app" })
+  // cors({ credentials: true, origin: "http://localhost:3000" })
 );
 
 app.use("/petshop/login", LoginRoutes);
