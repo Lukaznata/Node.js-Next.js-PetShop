@@ -38,7 +38,7 @@ app.use(express.json());
 
 app.use(
   // cors({ credentials: true, origin: "https://petshop-hazel.vercel.app" })
-  cors({ credentials: true, origin: "https://localhost:3000" })
+  cors({ credentials: true, origin: "http://localhost:3000" })
 );
 
 app.use("/petshop/login", LoginRoutes);
