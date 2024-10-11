@@ -1,5 +1,5 @@
 import express from "express";
-import VerifyToken from "../helpers/verifyToken";
+import VerifyToken from "../helpers/verifyToken.js";
 
 const router = express.Router();
 
