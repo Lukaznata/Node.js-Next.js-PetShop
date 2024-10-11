@@ -6,6 +6,7 @@ import sequelize from "./db/conn.js";
 import { config } from "dotenv";
 
 import LoginRoutes from "./routes/LoginRoutes.js";
+import VerifYFrontEndToken from "./routes/VerifyFrontEndToken.js";
 import HomeRoutes from "./routes/HomeRoutes.js";
 import ClientesRoutes from "./routes/ClientesRoutes.js";
 import PetsRoutes from "./routes/PetsRoutes.js";
@@ -42,6 +43,7 @@ app.use(
 );
 
 app.use("/petshop/login", LoginRoutes);
+app.use("/petshop/auth/verify", VerifYFrontEndToken);
 app.use("/petshop", HomeRoutes);
 app.use("/petshop/clientes", ClientesRoutes);
 app.use("/petshop/pets", PetsRoutes);
