@@ -187,15 +187,15 @@ Eu comecei pelas entidades PET, CLIENTE, ENDEREÇOS, AGENDAMENTO, SERVICO, AGEND
 
 Fiz um **MER** (Modelo de Entidade e Relacionamento):
 
-![Modelo de Entidade e Relacionamento](../images/Modelo_Entidade_Relacionamento_FIGMA.png)
+![Modelo_Entidade_Relacionamento_FIGMA](https://github.com/user-attachments/assets/71a7a4a2-3a13-4666-a14e-ec35d35ede06)
 
 Em seguida, fiz o **DER** (Diagrama de Entidade e Relacionamento), que é mais detalhado e mais próximo do resultado final do banco de dados.
 
-![Diagrama de Entidade e Relacionamento](https://github.com/Lukaznata/FullStack--PetShop/issues/1#issue-2659460413)
+![Digrama_Entidade_Relacionamento_FIGMA](https://github.com/user-attachments/assets/9a2ee7c1-1982-40f4-ba3f-62e215a7cfc5)
 
 Criei também um modelo em excel para exemplificar como está o banco no DB.
 
-![Exemplo DB em Excel](../images/excel.png)
+![excel](https://github.com/user-attachments/assets/72019c9a-b034-4503-af29-62d030670fc5)
 
 ## **_BACK-END_**
 
