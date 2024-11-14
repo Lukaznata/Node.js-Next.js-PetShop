@@ -37,10 +37,19 @@ const port = process.env.BACKEND_PORT || 5000;
 
 app.use(express.json());
 
-app.use(
-  cors({ credentials: true, origin: "https://petshop-hazel.vercel.app" })
-  // cors({ credentials: true, origin: "http://localhost:3000" })
-);
+const allowedOrigins = ['https://petshop-hazel.vercel.app', 'http://localhost:3000']
+
+app.use(cors({ 
+    credentials: true, 
+    origin: (origin, callback) => {
+      if(allowedOrigins.includes(origin as string) || !origin) {
+        callback(null, true);
+      }  else {
+        callback(new Error('Não permitido pelo CORS'));
+      }
+    }
+  }))
+
 
 app.use("/petshop/login", LoginRoutes);
 app.use("/petshop/auth/verify", VerifYFrontEndToken);
