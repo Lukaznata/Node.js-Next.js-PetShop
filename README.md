@@ -1325,7 +1325,6 @@ Esta tabela foi feita para fazer a conexão correta de muitos para muitos entre 
 ##### CREATE:
 
 campos obrigatórios: id_agendamento e id_servico.
-Não é possível agendar dois serviços com o mesmo agendamento.
 
 Exemplos de erros na criação:
 
