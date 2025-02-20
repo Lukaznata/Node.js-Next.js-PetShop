@@ -223,12 +223,12 @@ _Associações_:
 
 ---
 
-- 1 **agendamento** pertence 1 e apenas 1 **pet**;
+- 1 **agendamento** pertence a 1 e apenas 1 **pet**;
 - 1 **agendamento** pode ter 0 ou muitos **agendamento_servico**;
 
 ---
 
-- 1 **agendamento_servico** pertence 1 e apenas 1 **agendamento**;
+- 1 **agendamento_servico** pertence a 1 e apenas 1 **agendamento**;
 - 1 **agendamento_servico** pertence a 1 e apenas 1 **servico**;
 
 ---
