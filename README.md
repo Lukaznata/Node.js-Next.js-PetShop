@@ -985,6 +985,8 @@ retorno:
 
 - http://localhost:5000/petshop/agendamentos
 
+- http://localhost:5000/petshop/agendamentos/1
+
 - http://localhost:5000/petshop/agendamentos/hoje
 
 - http://localhost:5000/petshop/agendamentos/semana
@@ -1000,8 +1002,6 @@ retorno:
 - http://localhost:5000/petshop/agendamentos/cliente/1
 
 - http://localhost:5000/petshop/agendamentos/pet/1
-
-- http://localhost:5000/petshop/agendamentos/1
 
 - http://localhost:5000/petshop/agendamentos/update
 
