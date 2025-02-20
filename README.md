@@ -323,19 +323,6 @@ Caso haja outro cliente com o mesmo nome ou telefone, você receberá uma mensag
 }
 ```
 
-```json
-{
-  "message": "Já existe um cliente com este telefone.",
-  "data": {
-    "id": 3,
-    "nome_cliente": "João",
-    "telefone_cliente": 11112222333,
-    "createdAt": "2024-09-07T14:18:12.000Z",
-    "updatedAt": "2024-09-07T14:18:12.000Z"
-  }
-}
-```
-
 ---
 
 ##### READ:
