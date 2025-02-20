@@ -596,7 +596,7 @@ retorno
 
 ##### DELETE:
 
-Não é aconselhável deletar um pet, pois seus agendamentos serão excluídos juntos. Porque O agendamento existe caso exista um pet.
+Não é aconselhável deletar um pet, pois seus agendamentos serão excluídos juntos. Pois o agendamento existe caso exista um pet.
 Excluindo um pet será realizado um efeito cascata de exclusão em todos os seus dependentes.
 
 Exemplo
