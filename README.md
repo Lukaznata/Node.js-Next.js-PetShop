@@ -1015,8 +1015,6 @@ campos obrigatórios: data_agendamento e id_pet.
 
 campos opcionais: situacao(padrão: não), desconto, observacao.
 
-campos obrigatórios: data_agendamento e id_pet.
-
 Não é possível agendar caso não exista o pet.
 
 Em cada data/horário é possível agendar até dois pets diferentes.
