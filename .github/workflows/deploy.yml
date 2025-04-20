@@ -33,7 +33,7 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd ~/petshop-docker
-            docker-compose down
-            docker-compose pull
-            docker-compose up -d
+            sudo cd ~/petshop-docker
+            sudo docker-compose down
+            sudo docker-compose pull
+            sudo docker-compose up -d
