@@ -33,7 +33,7 @@ EnderecosClientes;
 config();
 
 const app = express();
-const port = process.env.BACKEND_PORT || 5000;
+const port = 5000;
 
 app.use(express.json());
 
@@ -71,4 +71,4 @@ sequelize
       );
     });
   })
-  .catch((err) => console.log("Erro ao criar tabela", err));
+  .catch((err) => console.log("Erro ao conectar ao banco de dados", err));
