@@ -9,6 +9,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Passo 1: Verificar o código
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Passo 2: Logar no Docker Hub
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      # Passo 3: Construir as imagens e enviar para o Docker Hub
+      - name: Build and push Frontend image
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/front-end-petshop:latest ./frontend
+          docker push ${{ secrets.DOCKER_USERNAME }}/front-end-petshop:latest
+
+      - name: Build and push Backend image
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/back-end-petshop:latest ./backend
+          docker push ${{ secrets.DOCKER_USERNAME }}/back-end-petshop:latest
+
+      # Passo 4: SSH para o servidor e atualizar containers
       - name: SSH into server and update containers
         uses: appleboy/ssh-action@v0.1.6
         with:
