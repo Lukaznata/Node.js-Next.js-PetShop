@@ -21,8 +21,8 @@ const AuthenticatedRoute = (WrappedRoute: React.ComponentType) => {
         }
         try {
           const response = await axios.get(
-            // `https://fullstack-petshop-production.up.railway.app/petshop/auth/verify`,
-            `http://localhost:5000/petshop/auth/verify`,
+            `http://134.209.78.250:5000/petshop/auth/verify`,
+            // `http://localhost:5000/petshop/auth/verify`,
             {
               headers: {
                 Authorization: `Bearer ${token}`,

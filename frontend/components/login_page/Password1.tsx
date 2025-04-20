@@ -15,8 +15,8 @@ const Password1 = () => {
 
     try {
       const res = await axios.post(
-        `http://localhost:5000/petshop/login`,
-        // `https://fullstack-petshop-production.up.railway.app/petshop/login`,
+        // `http://localhost:5000/petshop/login`,
+        `http://134.209.78.250:5000/petshop/login`,
         {
           senha,
         }
