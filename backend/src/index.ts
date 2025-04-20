@@ -37,10 +37,7 @@ const port = process.env.BACKEND_PORT || 5000;
 
 app.use(express.json());
 
-const allowedOrigins = [
-  "https://petshop-hazel.vercel.app",
-  "http://localhost:3000",
-];
+const allowedOrigins = ["http://134.209.78.250:3000", "http://localhost:3000"];
 
 app.use(
   cors({
