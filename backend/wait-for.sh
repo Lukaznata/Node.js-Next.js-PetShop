@@ -1,17 +1,15 @@
-#!/bin/sh
-# wait-for.sh
+#!/bin/bash
 
 HOST=$1
 PORT=$2
-shift 2
-CMD="$@"
+CMD="${@:3}"
 
-echo "Esperando por $HOST:$PORT..."
+echo "Aguardando $HOST:$PORT..."
 
-while ! echo > /dev/tcp/$HOST/$PORT 2>/dev/null; do
+while ! bash -c ">/dev/tcp/$HOST/$PORT" 2>/dev/null; do
+  sleep 1
   echo "Aguardando $HOST:$PORT..."
-  sleep 2
 done
 
-echo "$HOST:$PORT está disponível. Iniciando comando..."
+echo "$HOST:$PORT está disponível. Iniciando o serviço..."
 exec $CMD
