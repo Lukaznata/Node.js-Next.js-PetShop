@@ -58,8 +58,9 @@ export default class LoginController {
         return res.status(401).json({ message: "Senha incorreta." });
       }
 
-      await createUserToken(req, res);
+      return await createUserToken(req, res);
     } catch (error) {
+      console.error("Erro no login:", error);
       return res.status(500).json({
         message: "Erro interno do servidor.",
       });
