@@ -12,6 +12,11 @@ RUN npm run build
 
 RUN npm prune --production
 
+# Copia o script e garante permissão
+COPY wait-for.sh /app/wait-for.sh
+RUN chmod +x /app/wait-for.sh
+
 EXPOSE 5000
 
-CMD ["sh", "-c", "sleep 15 && npm start"]
+# Aguarda o banco e depois inicia
+CMD ["sh", "-c", "./wait-for.sh mysql 3306 npm start"]
