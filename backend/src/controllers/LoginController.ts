@@ -63,7 +63,7 @@ export default class LoginController {
       console.error("Erro no login:", error);
       return res.status(500).json({
         message: "Erro interno do servidor.",
-        error,
+        error: error instanceof Error ? error.message : "Erro desconhecido",
       });
     }
   }
