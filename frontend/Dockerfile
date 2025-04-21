@@ -10,6 +10,8 @@ COPY . .
 
 RUN npm run build
 
+RUN npm install sharp
+
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "start"]
