@@ -14,7 +14,10 @@ RUN npm prune --production
 
 # Copia o script e garante permissão
 COPY wait-for.sh /app/wait-for.sh
+
 RUN chmod +x /app/wait-for.sh
+
+RUN apt-get update && apt-get install -y netcat
 
 EXPOSE 5000
 
